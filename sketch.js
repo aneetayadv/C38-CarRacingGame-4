@@ -10,7 +10,8 @@ var form, player, game;
 var cars ,car1,car2,car3,car4; // C-38 SA
 
 function setup(){
-  canvas = createCanvas(displayWidth-20,displayHeight-20); //C-38 TA
+ // canvas = createCanvas(displayWidth-20,displayHeight-20); //C-38 TA
+  canvas = createCanvas(displayWidth,displayHeight);
   database = firebase.database();
   game = new Game();
   game.getState();
